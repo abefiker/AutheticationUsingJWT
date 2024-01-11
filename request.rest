@@ -1,0 +1,24 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWJlbWVsZWsiLCJpYXQiOjE3MDQ5NjM2MzUsImV4cCI6MTcwNDk2MzY1MH0.JC3PoQFBibNrP-fiz2j28alTPuFkOhc2fHCvZWd9cyU
+###
+DELETE   http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token" : ""
+}
+
+###
+POST  http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWJlbWVsZWsiLCJpYXQiOjE3MDQ5NjM1OTB9.alJG80_xmVRKMjIGHOM51T9syJRkjPJx-PQVDeos16g"
+}
+###
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username" : "Abemelek"
+}
